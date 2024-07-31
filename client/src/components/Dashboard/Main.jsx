@@ -22,7 +22,7 @@ const Main = () => {
 
   useEffect(() => {
     const fetchDataFromApi = async () => {
-      const API_URL = "http://localhost:5500";
+      const API_URL = "https://data-visualization-dashboard-nfnh.onrender.com";
       try {
         const response = await axios.get(`${API_URL}/api/data`);
         setData(response.data);
